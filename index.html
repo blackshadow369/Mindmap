@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Learning Map</h1>
+      <div class="progress">
+        <div class="progress-label"><span id="progress-text">0 / 0 done</span></div>
+        <div class="progress-bar"><div id="progress-fill"></div></div>
+      </div>
+      <ul id="topic-list" class="topic-list"></ul>
+      <button id="reset-btn" class="reset-btn" type="button">Reset progress</button>
+    </aside>
+
+    <main class="map" id="map">
+      <div class="bubbles" id="bubbles"></div>
+    </main>
+
+    <section class="detail" id="detail" aria-live="polite">
+      <p class="detail-empty">Click a bubble to see what to learn.</p>
+    </section>
+  </div>
+
+  <script src="data/topics/ai.js"></script>
+  <script src="data/topics/robotics.js"></script>
+  <script src="data/index.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
